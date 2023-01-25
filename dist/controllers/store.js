@@ -2,8 +2,6 @@ import database from '../database/database.js';
 import Store from '../models/store.js';
 import storeRepository from '../repository/store.js';
 
-const stores = database.marketplace.stores;
-
 class StoreController {
     create(req, res) {
         try {
@@ -28,7 +26,7 @@ class StoreController {
                 return;
             }
 
-            new Store(stores[index]).update(index, req.body);
+            new Store(database.marketplace.stores[index]).update(index, req.body);
 
             res.sendStatus(200);
         } catch (err) {

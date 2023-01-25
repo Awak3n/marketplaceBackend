@@ -6,8 +6,6 @@ import { randomUUID } from 'crypto';
 import productRepository from '../repository/product.js';
 import storeRepository from '../repository/store.js';
 
-const stores = database.marketplace.stores;
-
 export default class Purchase {
 
     constructor(id) {
@@ -23,7 +21,7 @@ export default class Purchase {
 
             const index = storeRepository.getIndexById(this.store_id);
 
-            this.purchase_fee = parseFloat(stores[index].fee);
+            this.purchase_fee = parseFloat(database.marketplace.stores[index].fee);
         }
     }
 

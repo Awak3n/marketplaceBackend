@@ -41,6 +41,13 @@ describe('Controller: Purchase', () => {
                     res.should.have.status(200)
                     res.body.should.be.a('array');
                     res.body.length.should.be.eq(1);
+                    res.body[0].should.be.a('object');;
+                    res.body[0].should.have.property('id');
+                    res.body[0].should.have.property('store_id').eq('1');
+                    res.body[0].should.have.property('product_id').eq('1');
+                    res.body[0].should.have.property('product_name').eq('Cellphone');
+                    res.body[0].should.have.property('product_price').eq(50);
+                    res.body[0].should.have.property('purchase_fee').eq(11.1);
                 done();
           });
         });

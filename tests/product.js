@@ -44,6 +44,10 @@ describe('Controller: Product', () => {
                 .end((err, res) => {
                     res.should.have.status(200);
                     res.body.should.be.a('array');
+                    res.body[0].should.have.property('id');
+                    res.body[0].should.have.property('store_id').eq('1');
+                    res.body[0].should.have.property('name').eq('Cellphone');
+                    res.body[0].should.have.property('price').eq(50);
                     res.body.length.should.be.eq(1);
                 done();
           });
@@ -99,6 +103,10 @@ describe('Controller: Product', () => {
                 .end((err, res) => {
                     res.should.have.status(200);
                     res.body.should.be.a('array');
+                    res.body[0].should.have.property('id');
+                    res.body[0].should.have.property('store_id').eq('1');
+                    res.body[0].should.have.property('name').eq('Cellphone');
+                    res.body[0].should.have.property('price').eq(50);
                     res.body.length.should.be.eq(1);
                 done();
           });
@@ -125,6 +133,10 @@ describe('Controller: Product', () => {
                 .end((err, res) => {
                     res.should.have.status(200);
                     res.body.should.be.a('array');
+                    res.body[0].should.have.property('id');
+                    res.body[0].should.have.property('store_id').eq('1');
+                    res.body[0].should.have.property('name').eq('Cellphone');
+                    res.body[0].should.have.property('price').eq(50);
                     res.body.length.should.be.eq(1);
                 done();
           });
