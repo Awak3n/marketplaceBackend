@@ -1,0 +1,124 @@
+POST http://localhost:3000/product
+content-type: application/json
+
+{
+    "store_id": "8cb12fd3-569c-4156-9b0b-43e396e55e6b",
+    "name": "Cellphone",
+    "price": "50"
+}
+
+###
+
+POST http://localhost:3000/product
+content-type: application/json
+
+{
+    "store_id": "384b6f93-f213-44a7-8f46-cf555ad7bbbc",
+    "name": "TV",
+    "price": "500.01"
+}
+
+###
+
+POST http://localhost:3000/product
+content-type: application/json
+
+{
+    "name": "TV",
+    "price": "500.00"
+}
+
+###
+
+POST http://localhost:3000/product
+content-type: application/json
+
+{
+    "store_id": "e29b3e98-3b17-4aad-9bc2-b563102deac5",
+    "price": "11"
+}
+
+
+###
+
+POST http://localhost:3000/product
+content-type: application/json
+
+{
+    "store_id": "27ce7cd2-8493-48e2-b1b3-094016957ead",
+    "name": "Misigno"
+}
+
+###
+
+PUT http://localhost:3000/product/e1a28751-6446-4d42-8e28-e28a37508ec8
+content-type: application/json
+
+{
+    "name": "iPhone",
+    "price": "50"
+}
+
+###
+
+PUT http://localhost:3000/product/e1a28751-6446-4d42-8e28-e28a37508ec8
+content-type: application/json
+
+{
+    "name": "iPhone 2",
+    "price": "60.5"
+}
+
+###
+
+PUT http://localhost:3000/product/e1a28751-6446-4d42-8e28-e28a37508ec8
+content-type: application/json
+
+{
+    "nam": "iPhone 2",
+    "price": "60.5"
+}
+
+###
+
+PUT http://localhost:3000/product/e1a28751-6446-4d42-8e28-e28a37508ec8
+content-type: application/json
+
+{
+    "name": "iPhone 2",
+    "pric": "60.5"
+}
+
+###
+
+PUT http://localhost:3000/product/e1a28751-6446-4d42-8e28-e28a37508ec
+content-type: application/json
+
+{
+    "name": "iPhone 2",
+    "price": "60.5"
+}
+
+###
+
+GET http://localhost:3000/product/
+
+###
+
+GET http://localhost:3000/product/9c31b19d-c6fd-4d20-a98a-bf1b6f3e771
+
+###
+
+GET http://localhost:3000/product/name/Cellphone
+
+###
+
+GET http://localhost:3000/product/price/50
+
+###
+
+DELETE http://localhost:3000/product/3eab5188-c4f1-42b1-a373-b428047cef0
+
+###
+
+DELETE http://localhost:3000/product/Cellphone/50

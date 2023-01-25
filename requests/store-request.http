@@ -1,0 +1,87 @@
+POST http://localhost:3000/store
+content-type: application/json
+
+{
+    "name": "Americanas",
+    "fee": "50"
+}
+
+###
+
+POST http://localhost:3000/store
+content-type: application/json
+
+{
+    "name": "Magazine Luiza",
+    "fee": "11"
+}
+
+###
+
+POST http://localhost:3000/store
+content-type: application/json
+
+{
+    "name": "Shopee",
+    "fet": "11"
+}
+
+###
+
+POST http://localhost:3000/store
+content-type: application/json
+
+{
+    "namee": "Misigno",
+    "fee": "11"
+}
+
+###
+
+PUT http://localhost:3000/store/4ebe412f-464a-4759-97cc-c00a841918f4
+content-type: application/json
+
+{
+    "name": "Americanas2",
+    "fee": "50"
+}
+
+###
+
+PUT http://localhost:3000/store/3e581224-39af-4210-906a-5452abe0915a
+content-type: application/json
+
+{
+    "name": "Magazine Luiza2",
+    "fee": "12"
+}
+
+###
+
+PUT http://localhost:3000/store/e7345be8-5f42-40cd-913f-5afe21a48474
+content-type: application/json
+
+{
+    "name": "Shopee3",
+    "fet": "12"
+}
+
+###
+
+PUT http://localhost:3000/store/e7345be8-5f42-40cd-913f-5afe21a48474
+content-type: application/json
+
+{
+    "namee": "Misigno2",
+    "fee": "12"
+}
+
+###
+
+PUT http://localhost:3000/store/e7345be8-5f42-40cd-913f-5afe21a4847
+content-type: application/json
+
+{
+    "name": "ID errado",
+    "fee": "12"
+}

@@ -1,0 +1,8 @@
+POST http://localhost:3000/purchase/c2e4f821-baf6-4e02-9993-4358d8853aa8
+content-type: application/json
+
+{}
+
+###
+
+GET http://localhost:3000/purchase/
